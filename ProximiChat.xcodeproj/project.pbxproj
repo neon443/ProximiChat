@@ -11,6 +11,7 @@
 		A9A5CCE52E6CAD7B00352A2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5CCE02E6CAD7B00352A2D /* ContentView.swift */; };
 		A9A5CCE62E6CAD7B00352A2D /* ProximiChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5CCE22E6CAD7B00352A2D /* ProximiChatApp.swift */; };
 		A9A5CD052E6D9F1300352A2D /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5CD042E6D9F1300352A2D /* ChatSession.swift */; };
+		A9A5CD082E6DB10700352A2D /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5CD072E6DB10700352A2D /* EnvironmentValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A9A5CCE22E6CAD7B00352A2D /* ProximiChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiChatApp.swift; sourceTree = "<group>"; };
 		A9A5CD042E6D9F1300352A2D /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
 		A9A5CD062E6DA7EC00352A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A9A5CD072E6DB10700352A2D /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A9A5CD042E6D9F1300352A2D /* ChatSession.swift */,
 				A9A5CCE92E6CAD8D00352A2D /* Views */,
 				A9A5CCE82E6CAD8300352A2D /* Resources */,
+				A9A5CD072E6DB10700352A2D /* EnvironmentValues.swift */,
 			);
 			path = ProximiChat;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				A9A5CCE52E6CAD7B00352A2D /* ContentView.swift in Sources */,
 				A9A5CCE62E6CAD7B00352A2D /* ProximiChatApp.swift in Sources */,
 				A9A5CD052E6D9F1300352A2D /* ChatSession.swift in Sources */,
+				A9A5CD082E6DB10700352A2D /* EnvironmentValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +303,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neon443.ProximiChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,7 +316,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.5;
+				XROS_DEPLOYMENT_TARGET = 1;
 			};
 			name = Debug;
 		};
@@ -339,10 +343,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 11;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neon443.ProximiChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,7 +356,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.5;
+				XROS_DEPLOYMENT_TARGET = 1;
 			};
 			name = Release;
 		};

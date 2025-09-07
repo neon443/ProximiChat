@@ -17,6 +17,8 @@ class ChatSession: NSObject, ObservableObject, Observable {
 	private let session: MCSession
 	private let log = Logger()
 	
+	@Published var connectedPeers: [MCPeerID] = []
+	
 	override init() {
 		self.session = MCSession(peer: myPeerID, securityIdentity: nil, encryptionPreference: .none)
 		self.serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil, serviceType: serviceType)
@@ -51,6 +53,7 @@ extension ChatSession: MCNearbyServiceAdvertiserDelegate {
 		invitationHandler: @escaping (Bool, MCSession?) -> Void
 	) {
 		log.info("serviceAdvertiser: didReceiveInvitationFromPeer: \(peerID)")
+		invitationHandler(true, session)
 	}
 }
 
@@ -65,12 +68,16 @@ extension ChatSession: MCNearbyServiceBrowserDelegate {
 	
 	func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
 		log.info("serviceBrowser: foundPeer: \(peerID)")
+		browser.invitePeer(peerID, to: session, withContext: nil, timeout: 10)
 	}
 }
 
 extension ChatSession: MCSessionDelegate {
 	func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
 		log.info("session: peer \(peerID) didChangeState \(state.rawValue)")
+		DispatchQueue.main.async {
+			self.connectedPeers = session.connectedPeers
+		}
 	}
 	
 	func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {

@@ -14,7 +14,7 @@ struct ProximiChatApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-				.environment(chatSession)
+				.environment(\.chatSession, chatSession)
         }
     }
 }

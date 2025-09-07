@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+	@Environment(\.chatSession) private var chatSession
+	
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
             Text("Hello, world!")
         }
         .padding()
