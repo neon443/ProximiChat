@@ -6,17 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A9A5CCE42E6CAD7B00352A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A5CCDF2E6CAD7B00352A2D /* Assets.xcassets */; };
+		A9A5CCE52E6CAD7B00352A2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5CCE02E6CAD7B00352A2D /* ContentView.swift */; };
+		A9A5CCE62E6CAD7B00352A2D /* ProximiChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5CCE22E6CAD7B00352A2D /* ProximiChatApp.swift */; };
+		A9A5CD052E6D9F1300352A2D /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5CD042E6D9F1300352A2D /* ChatSession.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A97B4B462E6CA7AD00A00702 /* ProximiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A5CCDF2E6CAD7B00352A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9A5CCE02E6CAD7B00352A2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9A5CCE12E6CAD7B00352A2D /* ProximiChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProximiChat.entitlements; sourceTree = "<group>"; };
+		A9A5CCE22E6CAD7B00352A2D /* ProximiChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiChatApp.swift; sourceTree = "<group>"; };
+		A9A5CD042E6D9F1300352A2D /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A97B4B482E6CA7AD00A00702 /* ProximiChat */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ProximiChat;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A97B4B432E6CA7AD00A00702 /* Frameworks */ = {
@@ -32,7 +36,7 @@
 		A97B4B3D2E6CA7AD00A00702 = {
 			isa = PBXGroup;
 			children = (
-				A97B4B482E6CA7AD00A00702 /* ProximiChat */,
+				A9A5CCE32E6CAD7B00352A2D /* ProximiChat */,
 				A97B4B472E6CA7AD00A00702 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +47,34 @@
 				A97B4B462E6CA7AD00A00702 /* ProximiChat.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A9A5CCE32E6CAD7B00352A2D /* ProximiChat */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5CCE22E6CAD7B00352A2D /* ProximiChatApp.swift */,
+				A9A5CCE12E6CAD7B00352A2D /* ProximiChat.entitlements */,
+				A9A5CD042E6D9F1300352A2D /* ChatSession.swift */,
+				A9A5CCE92E6CAD8D00352A2D /* Views */,
+				A9A5CCE82E6CAD8300352A2D /* Resources */,
+			);
+			path = ProximiChat;
+			sourceTree = "<group>";
+		};
+		A9A5CCE82E6CAD8300352A2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5CCDF2E6CAD7B00352A2D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9A5CCE92E6CAD8D00352A2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9A5CCE02E6CAD7B00352A2D /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +91,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A97B4B482E6CA7AD00A00702 /* ProximiChat */,
 			);
 			name = ProximiChat;
 			packageProductDependencies = (
@@ -109,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A5CCE42E6CAD7B00352A2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A5CCE52E6CAD7B00352A2D /* ContentView.swift in Sources */,
+				A9A5CCE62E6CAD7B00352A2D /* ProximiChatApp.swift in Sources */,
+				A9A5CD052E6D9F1300352A2D /* ChatSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
