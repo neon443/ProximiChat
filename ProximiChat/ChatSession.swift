@@ -9,8 +9,8 @@ import Foundation
 import MultipeerConnectivity
 import OSLog
 
-class ChatSession: NSObject, ObservableObject {
-	private let serviceType: String = "ProximiChatSession"
+class ChatSession: NSObject, ObservableObject, Observable {
+	private let serviceType = "proximi-chat"
 	private let myPeerID: MCPeerID = MCPeerID(displayName: UIDevice.current.name)
 	private let serviceAdvertiser: MCNearbyServiceAdvertiser
 	private let serviceBrowser: MCNearbyServiceBrowser

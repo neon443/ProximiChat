@@ -20,6 +20,7 @@
 		A9A5CCE12E6CAD7B00352A2D /* ProximiChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProximiChat.entitlements; sourceTree = "<group>"; };
 		A9A5CCE22E6CAD7B00352A2D /* ProximiChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiChatApp.swift; sourceTree = "<group>"; };
 		A9A5CD042E6D9F1300352A2D /* ChatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSession.swift; sourceTree = "<group>"; };
+		A9A5CD062E6DA7EC00352A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		A9A5CCE32E6CAD7B00352A2D /* ProximiChat */ = {
 			isa = PBXGroup;
 			children = (
+				A9A5CD062E6DA7EC00352A2D /* Info.plist */,
 				A9A5CCE22E6CAD7B00352A2D /* ProximiChatApp.swift */,
 				A9A5CCE12E6CAD7B00352A2D /* ProximiChat.entitlements */,
 				A9A5CD042E6D9F1300352A2D /* ChatSession.swift */,
@@ -286,6 +288,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProximiChat/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -325,6 +328,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProximiChat/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
