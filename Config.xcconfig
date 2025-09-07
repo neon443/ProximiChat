@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  ProximiChat
+//
+//  Created by neon443 on 07/09/2025.
+//
+
+VERSION = 0.0
+BUILD = 1
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
